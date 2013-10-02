@@ -1,88 +1,24 @@
 <!doctype html>
 <html>
 <head>
-    <style>
-        #bar1 {
-            width: 640px;
-            height: 380px;
-            
-            background-color: black;
-            
-            position: relative;
-        }
-        
-        .slot {
-            width: 40px;
-            height: 40px;
-            
-            border: 2px dotted #ccc;
-            
-            position: absolute;
-        }
-        
-        .LDU, .LAU, .RDU, .RAU {
-            top: 150px;
-        }
-        
-        .LDU, .LDD {
-            left: 60px;
-        }
-        
-        .LDL, .LDR, .LAL, .LAR, .RDL, .RDR, .RAL, .RAR {
-            top: 190px;
-        }
-        
-        .LDD, .LAD, .RDD, .RAD {
-            top: 230px;
-        }
-        
-        .LDL {
-            left: 20px;
-        }
-        
-        .LDR {
-            left: 100px;
-        }
-        
-        .LAL {
-            left: 170px;
-        }
-        
-        .LAR {
-            left: 250px;
-        }
-        
-        .LAU, .LAD {
-            left: 210px;
-        }
-        
-        .RDL {
-            left: 330px;
-        }
-        
-        .RDU, .RDD {
-            left: 370px;
-        }
-        
-        .RDR {
-            left: 410px;
-        }
-        
-        .RAL {
-            left: 490px;
-        }
-        
-        .RAU, .RAD {
-            left: 530px;
-        }
-        
-        .RAR {
-            left: 570px;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="lib/jquery-ui-1.10.3/themes/base/jquery-ui.min.css" />
+    <link rel="stylesheet" href="css/xbar.css" />
+    
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="lib/jquery-ui-1.10.3/jquery-ui.min.js"></script>
+    <script src="js/xbar.js"></script>
 </head>
 <body>
     <div id="container">
+        <div id="controls">
+            <div id="left_panel">
+                <select id="class">
+                    <option value='paladin'>Paladin</option>
+                    <option value='gladiator'>Gladiator</option>
+                </select>
+            </div>
+            <div id="right_panel"></div>
+        </div>
         <div id="bar1">
             <div class="LDL slot"></div>
             <div class="LDU slot"></div>

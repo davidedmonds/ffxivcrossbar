@@ -1,0 +1,110 @@
+#controls {
+    width: 640px;
+    height: 220px;
+    
+    background-color: #ccc;
+}
+
+#left_panel {
+    width: 240px;
+    height: 200px;
+    
+    border: 1px solid #999;
+    
+    margin: 5px;
+    
+    float: left;
+}
+
+#right_panel {
+    width: 375px;
+    height: 200px;
+    
+    margin: 5px;
+    
+    border: 1px solid #999;
+    
+    float: right;
+}
+
+#bar1 {
+    width: 640px;
+    height: 380px;
+    
+    background-color: black;
+    
+    position: relative;
+}
+
+select {
+    margin: 10px
+}
+
+.slot {
+    width: 40px;
+    height: 40px;
+    
+    border: 2px dotted #ccc;
+    
+    position: absolute;
+}
+
+.LDU, .LAU, .RDU, .RAU {
+    top: 150px;
+}
+
+.LDU, .LDD {
+    left: 60px;
+}
+
+.LDL, .LDR, .LAL, .LAR, .RDL, .RDR, .RAL, .RAR {
+    top: 190px;
+}
+
+.LDD, .LAD, .RDD, .RAD {
+    top: 230px;
+}
+
+.LDL {
+    left: 20px;
+}
+
+.LDR {
+    left: 100px;
+}
+
+.LAL {
+    left: 170px;
+}
+
+.LAR {
+    left: 250px;
+}
+
+.LAU, .LAD {
+    left: 210px;
+}
+
+.RDL {
+    left: 330px;
+}
+
+.RDU, .RDD {
+    left: 370px;
+}
+
+.RDR {
+    left: 410px;
+}
+
+.RAL {
+    left: 490px;
+}
+
+.RAU, .RAD {
+    left: 530px;
+}
+
+.RAR {
+    left: 570px;
+}
