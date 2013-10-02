@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+    <title>Display Images</title>
+    
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script>
+        jQuery(window).ready(function () {
+            var n, nn, word, url, img, 
+                errored = false,
+                prefix = '000';
+            
+            for (n = 1; n <= 999; n += 1) {
+                if (n < 10) {
+                    nn = '00' + String(n);
+                } else if (n < 100) {
+                    nn = '0' + String(n);
+                } else {
+                    nn = String(n);
+                }
+                word = prefix + nn;
+                
+                url = "http://xivdbimg.zamimg.com/images/icons/000000/" + word + ".png";
+                
+                img = jQuery('<img>')
+                    .attr('src',url)
+                    .css({
+                        float : 'left'
+                    })
+                    .error(function () {
+                        jQuery(this).remove();
+                    })
+                    .appendTo('#container');
+            }
+        });
+        
+    </script>
+</head>
+<body>
+    <div id="container"></div>
+</body>
+</html>
