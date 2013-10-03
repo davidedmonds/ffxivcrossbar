@@ -1,6 +1,52 @@
 var data;
 
 jQuery(window).ready(function () {
+
+    (function () {
+        var div, slot, i, j, display, span,
+            slotkey = [
+                'LDL','LDU','LDR','LDD',
+                'LAL','LAU','LAR','LAD',
+                'RDL','RDU','RDR','RDD',
+                'RAL','RAU','RAR','RAD'];
+        
+        for (i = 1; i <= 8; i += 1) {
+            if (i == 1) {
+                display = 'block';
+            } else {
+                display = 'none';
+            }
+            div = jQuery('<div/>')
+                .attr('id','bar'+i)
+                .addClass('bar')
+                .css({
+                    display : display
+                })
+                .appendTo('#container');
+            
+            span = jQuery('<span/>')
+                .html('Crossbar # ' + i)
+                .css({
+                    color : 'white',
+                    'font-weight' : 'bold',
+                    'font-size' : '2em'
+                })
+                .appendTo(div);
+            
+            for (j = 0; j < slotkey.length; j += 1) {
+                slot = jQuery('<div/>')
+                    .addClass('slot ' + slotkey[j])
+                    .appendTo(div);
+            }
+        }
+    }());
+
+    jQuery('#bar').change(function (event) {
+        jQuery('.bar').hide();
+        jQuery('#bar'+jQuery('#bar').find('option:selected').attr('value'))
+            .show();
+    });
+
     jQuery('#class').change(function (event) {
         var clas = jQuery('#class').find('option:selected').attr('value'),
             raw_abilities = data.abilities,
@@ -40,7 +86,8 @@ jQuery(window).ready(function () {
                         'z-index' : 50
                     })
                     .draggable({
-                        revert : true
+                        revert : true,
+                        snap : '.slot'
                     })
                     .appendTo(div);
             }
@@ -51,30 +98,39 @@ jQuery(window).ready(function () {
         .droppable({
             accept : ".drag_skill",
             drop : function (event, ui) {
-                var cc = ui.draggable.clone();
-                
-                if (jQuery(this).children().length > 0) {
-                    jQuery(this).children().remove();
+                var draggable, still;
+                if (!ui.draggable.hasClass('clone')) {
+                    draggable = ui.draggable.clone()
+                        .addClass('clone');
+                } else {
+                    draggable = ui.draggable;
                 }
                 
-                cc.css({
+                if (jQuery(this).children().length > 0) {
+                    still = jQuery(this).find('img:first');
+                    
+                    if (!ui.draggable.hasClass('clone')) {
+                        jQuery(this).children().remove();
+                    } else {
+                        still.insertBefore(draggable);
+                    }
+                }
+                
+                draggable.css({
                     left : 0,
                     top : 0
                 })
                 .draggable({
-                    revert : true
+                    revert : true,
+                    snap : '.slot'
                 })
-                .click(function (event) {
-                    // TODO: finish this
-                    event.preventDefault();
-                    event.stopPropagation();
-                    console.log(event.which);
-                    if (event.which === 3) {
+                .dblclick(function (event) {
+                    if (event.which === 1) {
                         jQuery(this).remove();
+                        event.stopPropagation();
                     }
                 })
                 .appendTo(this);
-                
             }
         });
 });

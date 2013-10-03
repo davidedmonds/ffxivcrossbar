@@ -27,7 +27,7 @@
     float: right;
 }
 
-#bar1 {
+div.bar {
     width: 640px;
     height: 380px;
     
