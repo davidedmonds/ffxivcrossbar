@@ -486,6 +486,180 @@ data = {
             label : 'Chaos Thrust',
             icon : '000508',
             'class' : 'lancer'
+        },
+        
+        // Archer
+        arc_heavy_shot : {
+            label : 'Heavy Shot',
+            icon : '000608',
+            'class' : 'archer'
+        },
+        arc_straight_shot : {
+            label : 'Straight Shot',
+            icon : '000609',
+            'class' : 'archer'
+        },
+        arc_raging_strikes : {
+            label : 'Raging Strikes',
+            icon : '000602',
+            'class' : 'archer'
+        },
+        arc_venomous_bite : {
+            label : 'Venomous Bite',
+            icon : '000613',
+            'class' : 'archer'
+        },
+        arc_miserys_end : {
+            label : "Misery's End",
+            icon : '000614',
+            'class' : 'archer'
+        },
+        arc_shadowbind : {
+            label : 'Shadowbind',
+            icon : '000606',
+            'class' : 'archer'
+        },
+        arc_bloodletter : {
+            label : 'Bloodletter',
+            icon : '000611',
+            'class' : 'archer'
+        },
+        arc_repelling_shot : {
+            label : 'Repelling Shot',
+            icon : '000616',
+            'class' : 'archer'
+        },
+        arc_quick_nock : {
+            label : 'Quick Nock',
+            icon : '000610',
+            'class' : 'archer'
+        },
+        arc_swiftsong : {
+            label : 'Swiftsong',
+            icon : '000612',
+            'class' : 'archer'
+        },
+        arc_hawks_eye : {
+            label : "Hawk's Eye",
+            icon : '000604',
+            'class' : 'archer'
+        },
+        arc_windbite : {
+            label : 'Windbite',
+            icon : '000617',
+            'class' : 'archer'
+        },
+        arc_quelling_strikes : {
+            label : 'Quelling Strikes',
+            icon : '000601',
+            'class' : 'archer'
+        },
+        arc_barrage : {
+            label : 'Barrage',
+            icon : '000603',
+            'class' : 'archer'
+        },
+        arc_blunt_arrow : {
+            label : 'Blunt Arrow',
+            icon : '000619',
+            'class' : 'archer'
+        },
+        arc_flaming_arrow : {
+            label : 'Flaming Arrow',
+            icon : '000618',
+            'class' : 'archer'
+        },
+        arc_wide_volley : {
+            label : 'Wide Volley',
+            icon : '000607',
+            'class' : 'archer'
+        },
+        
+        // Conjurer
+        cnj_stone : {
+            label : 'Stone',
+            icon : '000703',
+            'class' : 'conjurer'
+        },
+        cnj_cure : {
+            label : 'Cure',
+            icon : '000705',
+            'class' : 'conjurer'
+        },
+        cnj_aero : {
+            label : 'Aero',
+            icon : '000701',
+            'class' : 'conjurer'
+        },
+        cnj_cleric_stance : {
+            label : 'Cleric Stance',
+            icon : '000713',
+            'class' : 'conjurer'
+        },
+        cnj_protect : {
+            label : 'Protect',
+            icon : '000710',
+            'class' : 'conjurer'
+        },
+        cnj_medica : {
+            label : 'Medica',
+            icon : '000708',
+            'class' : 'conjurer'
+        },
+        cnj_raise : {
+            label : 'Raise',
+            icon : '000711',
+            'class' : 'conjurer'
+        },
+        cnj_fluid_aura : {
+            label : 'Fluid Aura',
+            icon : '000716',
+            'class' : 'conjurer'
+        },
+        cnj_esuna : {
+            label : 'Esuna',
+            icon : '000717',
+            'class' : 'conjurer'
+        },
+        cnj_stone_ii : {
+            label : 'Stone II',
+            icon : '000704',
+            'class' : 'conjurer'
+        },
+        cnj_repose : {
+            label : 'Repose',
+            icon : '000714',
+            'class' : 'conjurer'
+        },
+        cnj_cure_ii : {
+            label : 'Cure II',
+            icon : '000706',
+            'class' : 'conjurer'
+        },
+        cnj_stoneskin : {
+            label : 'Stoneskin',
+            icon : '000712',
+            'class' : 'conjurer'
+        },
+        cnj_shroud_of_saints : {
+            label : 'Shroud of Saints',
+            icon : '000715',
+            'class' : 'conjurer'
+        },
+        cnj_cure_iii : {
+            label : 'Cure III',
+            icon : '000707',
+            'class' : 'conjurer'
+        },
+        cnj_aero_ii : {
+            label : 'Aero II',
+            icon : '000702',
+            'class' : 'conjurer'
+        },
+        cnj_medica_ii : {
+            label : 'Medica II',
+            icon : '000709',
+            'class' : 'conjurer'
         }
     }
 }
